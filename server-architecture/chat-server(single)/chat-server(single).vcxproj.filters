@@ -103,7 +103,7 @@
     <ClInclude Include="library\database\include\mysql\udf_registration_types.h">
       <Filter>library\database\include\mysql</Filter>
     </ClInclude>
-    <ClInclude Include="login_chat_server.h" />
+    <ClInclude Include="chat_server.h" />
     <ClInclude Include="library\system-component\overlapped.h">
       <Filter>library\system-component</Filter>
     </ClInclude>

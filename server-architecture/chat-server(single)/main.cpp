@@ -1,12 +1,12 @@
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
-#include "login_chat_server.h"
+#include "chat_server.h"
 
 int main(void) noexcept {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	auto& login_chat_server_ = login_chat_server::instance();
+	auto& chat_server_ = chat_server::instance();
 	{
 		command::parameter param("include", "server.cfg");
 		command::instance().execute("include", &param);

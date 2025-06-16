@@ -240,7 +240,7 @@
     <ClInclude Include="library\utility\logger.h" />
     <ClInclude Include="library\utility\parser.h" />
     <ClInclude Include="library\utility\performance_data_helper.h" />
-    <ClInclude Include="login_chat_server.h" />
+    <ClInclude Include="chat_server.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="CommonProtocol.h" />
   </ItemGroup>

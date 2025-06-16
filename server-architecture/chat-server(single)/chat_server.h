@@ -9,10 +9,10 @@
 using namespace data_structure;
 using namespace system_component;
 
-class login_chat_server final : public server, public design_pattern::singleton<login_chat_server> {
+class chat_server final : public server, public design_pattern::singleton<chat_server> {
 private:
 	using size_type = unsigned int;
-	friend class design_pattern::singleton<login_chat_server>;
+	friend class design_pattern::singleton<chat_server>;
 	enum class type : unsigned short {
 		create_session = 1, receive_session, response_login, destory_session, close_update
 	};
@@ -133,12 +133,12 @@ private:
 		data_structure::intrusive::list<user, 0> _sector[52][52];
 	};
 private:
-	inline explicit login_chat_server(void) noexcept = default;
-	inline explicit login_chat_server(login_chat_server const& rhs) noexcept = delete;
-	inline explicit login_chat_server(login_chat_server&& rhs) noexcept = delete;
-	inline auto operator=(login_chat_server const& rhs) noexcept -> login_chat_server & = delete;
-	inline auto operator=(login_chat_server&& rhs) noexcept -> login_chat_server & = delete;
-	inline ~login_chat_server(void) noexcept = default;
+	inline explicit chat_server(void) noexcept = default;
+	inline explicit chat_server(chat_server const& rhs) noexcept = delete;
+	inline explicit chat_server(chat_server&& rhs) noexcept = delete;
+	inline auto operator=(chat_server const& rhs) noexcept -> chat_server & = delete;
+	inline auto operator=(chat_server&& rhs) noexcept -> chat_server & = delete;
+	inline ~chat_server(void) noexcept = default;
 public:
 	inline void update(void) noexcept {
 		database::redis redis;
@@ -320,7 +320,7 @@ public:
 		*message_ptr << (unsigned short)en_PACKET_SS_MONITOR_LOGIN << (int)2;
 		do_send_session(_monitor_server, message_ptr);
 
-		_update_thread.begin(&login_chat_server::update, 0, this);
+		_update_thread.begin(&chat_server::update, 0, this);
 	};
 	virtual void on_stop(void) noexcept override {
 		auto& memory_pool = data_structure::_thread_local::memory_pool<job>::instance();
