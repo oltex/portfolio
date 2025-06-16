@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{050e5e4d-9484-452f-8294-aa7ec22b979a}</ProjectGuid>
+    <RootNamespace>serverlibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IncludePath>$(ProjectDir)\library\database;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IncludePath>$(ProjectDir)\library\database;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IncludePath>$(ProjectDir)\library\database;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IncludePath>$(ProjectDir)\library\database;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="library\database\include\openssl\applink.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="library\algorithm\predicate.h" />
+    <ClInclude Include="library\data-structure\intrusive\list.h" />
+    <ClInclude Include="library\data-structure\intrusive\shared_pointer.h" />
+    <ClInclude Include="library\data-structure\lockfree\memory_pool.h" />
+    <ClInclude Include="library\data-structure\lockfree\queue.h" />
+    <ClInclude Include="library\data-structure\pair.h" />
+    <ClInclude Include="library\data-structure\priority_queue.h" />
+    <ClInclude Include="library\data-structure\serialize_buffer.h" />
+    <ClInclude Include="library\data-structure\thread-local\memory_pool.h" />
+    <ClInclude Include="library\data-structure\unique_pointer.h" />
+    <ClInclude Include="library\data-structure\vector.h" />
+    <ClInclude Include="library\database\cpp_redis\builders\array_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\builders_factory.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\builder_iface.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\bulk_string_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\error_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\integer_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\reply_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\builders\simple_string_builder.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\client.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\consumer.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\reply.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\sentinel.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\subscriber.hpp" />
+    <ClInclude Include="library\database\cpp_redis\core\types.hpp" />
+    <ClInclude Include="library\database\cpp_redis\helpers\generate_rand.hpp" />
+    <ClInclude Include="library\database\cpp_redis\helpers\variadic_template.hpp" />
+    <ClInclude Include="library\database\cpp_redis\impl\client.ipp" />
+    <ClInclude Include="library\database\cpp_redis\impl\types.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\convert.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\deprecated.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\dispatch_queue.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\error.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\logger.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\macro.hpp" />
+    <ClInclude Include="library\database\cpp_redis\misc\optional.hpp" />
+    <ClInclude Include="library\database\cpp_redis\network\redis_connection.hpp" />
+    <ClInclude Include="library\database\cpp_redis\network\tcp_client.hpp" />
+    <ClInclude Include="library\database\cpp_redis\network\tcp_client_iface.hpp" />
+    <ClInclude Include="library\database\include\errmsg.h" />
+    <ClInclude Include="library\database\include\field_types.h" />
+    <ClInclude Include="library\database\include\mysql.h" />
+    <ClInclude Include="library\database\include\mysqld_error.h" />
+    <ClInclude Include="library\database\include\mysqlx_ername.h" />
+    <ClInclude Include="library\database\include\mysqlx_error.h" />
+    <ClInclude Include="library\database\include\mysqlx_version.h" />
+    <ClInclude Include="library\database\include\mysql\client_plugin.h" />
+    <ClInclude Include="library\database\include\mysql\plugin_auth_common.h" />
+    <ClInclude Include="library\database\include\mysql\udf_registration_types.h" />
+    <ClInclude Include="library\database\include\mysql_com.h" />
+    <ClInclude Include="library\database\include\mysql_time.h" />
+    <ClInclude Include="library\database\include\mysql_version.h" />
+    <ClInclude Include="library\database\include\my_command.h" />
+    <ClInclude Include="library\database\include\my_compress.h" />
+    <ClInclude Include="library\database\include\my_list.h" />
+    <ClInclude Include="library\database\mysql.h" />
+    <ClInclude Include="library\database\redis.h" />
+    <ClInclude Include="library\database\tacopie\network\io_service.hpp" />
+    <ClInclude Include="library\database\tacopie\network\self_pipe.hpp" />
+    <ClInclude Include="library\database\tacopie\network\tcp_client.hpp" />
+    <ClInclude Include="library\database\tacopie\network\tcp_server.hpp" />
+    <ClInclude Include="library\database\tacopie\network\tcp_socket.hpp" />
+    <ClInclude Include="library\database\tacopie\utils\error.hpp" />
+    <ClInclude Include="library\database\tacopie\utils\logger.hpp" />
+    <ClInclude Include="library\database\tacopie\utils\thread_pool.hpp" />
+    <ClInclude Include="library\database\tacopie\utils\typedefs.hpp" />
+    <ClInclude Include="library\design-pattern\singleton.h" />
+    <ClInclude Include="library\design-pattern\thread-local\singleton.h" />
+    <ClInclude Include="library\system-component\file.h" />
+    <ClInclude Include="library\system-component\handle.h" />
+    <ClInclude Include="library\system-component\inputoutput_completion_port.h" />
+    <ClInclude Include="library\system-component\lock\critical_section.h" />
+    <ClInclude Include="library\system-component\overlapped.h" />
+    <ClInclude Include="library\system-component\socket.h" />
+    <ClInclude Include="library\system-component\socket_address.h" />
+    <ClInclude Include="library\system-component\thread.h" />
+    <ClInclude Include="library\system-component\time\date.h" />
+    <ClInclude Include="library\system-component\time\multimedia.h" />
+    <ClInclude Include="library\system-component\time\unix.h" />
+    <ClInclude Include="library\system-component\wait_on_address.h" />
+    <ClInclude Include="library\utility\command.h" />
+    <ClInclude Include="library\utility\crash_dump.h" />
+    <ClInclude Include="library\utility\logger.h" />
+    <ClInclude Include="library\utility\parser.h" />
+    <ClInclude Include="library\utility\performance_data_helper.h" />
+    <ClInclude Include="echo_server.h" />
+    <ClInclude Include="server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="library\database\cpp_redis\cpp_redis.lib" />
+    <Library Include="library\database\library\libmysql.lib" />
+    <Library Include="library\database\library\mysqlclient.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="library\database\tacopie\tacopie.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="library\database\cpp_redis\cpp_redis" />
+    <None Include="library\database\cpp_redis\cpp_redis.pdb" />
+    <None Include="library\database\library\libcrypto-3-x64.dll" />
+    <None Include="library\database\library\libmysql.dll" />
+    <None Include="library\database\library\libssl-3-x64.dll" />
+    <None Include="library\database\tacopie\tacopie" />
+    <None Include="library\database\tacopie\tacopie.pdb" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
