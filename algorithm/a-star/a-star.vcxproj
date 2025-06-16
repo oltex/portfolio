@@ -152,9 +152,20 @@
   <ItemGroup>
     <ClInclude Include="a-star\coordinate.h" />
     <ClInclude Include="a-star\grid.h" />
+    <ClInclude Include="a-star\library\hash.h" />
+    <ClInclude Include="a-star\library\list.h" />
+    <ClInclude Include="a-star\library\memory.h" />
+    <ClInclude Include="a-star\library\pair.h" />
+    <ClInclude Include="a-star\library\pool.h" />
+    <ClInclude Include="a-star\library\swap.h" />
+    <ClInclude Include="a-star\library\unordered_map.h" />
+    <ClInclude Include="a-star\library\vector.h" />
+    <ClInclude Include="a-star\library\bit_grid.h" />
+    <ClInclude Include="a-star\library\shared_pointer.h" />
+    <ClInclude Include="a-star\library\weak_pointer.h" />
     <ClInclude Include="a-star\path.h" />
     <ClInclude Include="camera.h" />
-    <ClInclude Include="client.h" />
+    <ClInclude Include="application.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="tile.h" />
     <ClInclude Include="recode.h" />

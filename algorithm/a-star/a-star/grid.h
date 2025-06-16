@@ -1,8 +1,8 @@
 #pragma once
 #include "coordinate.h"
-#include "../../../data-structure/bit-grid/bit_grid.h"
+#include "library/bit_grid.h"
 
-namespace algorithm::a_star {
+namespace a_star {
 	class grid final {
 	private:
 		using size_type = unsigned int;
@@ -32,6 +32,6 @@ namespace algorithm::a_star {
 		}
 	public:
 		size_type _width, _height;
-		library::data_structure::bit_grid<unsigned long long> _bit_grid;
+		library::bit_grid<unsigned long long> _bit_grid;
 	};
 }

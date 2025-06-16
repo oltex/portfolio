@@ -4,24 +4,21 @@
 #include "a-star/grid.h"
 #include "a-star/path.h"
 
-#include "../../system/window/device_context.h"
-#include "../../system/window/font.h"
 #include <string>
 
 class recode final {
 public:
-	inline explicit recode(void) noexcept
-		: _font(18, 0, 0, 0, FW_HEAVY, FALSE, FALSE, FALSE,
+	inline explicit recode(void) noexcept {
+		_font = CreateFontW(18, 0, 0, 0, FW_HEAVY, FALSE, FALSE, FALSE,
 			DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, FF_DONTCARE,
-			L"Malgun Gothic") {
-
+			L"Malgun Gothic");
 	}
 	inline ~recode(void) noexcept = default;
 public:
-	inline void paint(window::device_context& dc, algorithm::a_star::path& path) noexcept {
-		dc.select_object(_font);
-		dc.set_bk_mode(TRANSPARENT);
-		dc.set_text_color(RGB(255, 255, 255));
+	inline void paint(HDC hdc, a_star::path& path) noexcept {
+		SelectObject(hdc, _font);
+		SetBkMode(hdc, TRANSPARENT);
+		SetTextColor(hdc, RGB(255, 255, 255));
 		if (!path._result.empty()) {
 			auto iter = path._result.begin();
 			auto iter2 = path._result.begin();
@@ -31,9 +28,9 @@ public:
 				distance += (*iter).distance_euclidean((*iter2));
 
 			std::wstring wstr = L"distance : " + std::to_wstring(distance);
-			dc.text_out(0, 0, wstr.c_str(), (int)wstr.size());
+			TextOutW(hdc, 0, 0, wstr.c_str(), (int)wstr.size());
 		}
 	}
 private:
-	window::font _font;
+	HGDIOBJ _font;
 };

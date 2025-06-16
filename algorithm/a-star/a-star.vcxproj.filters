@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="client">
-      <UniqueIdentifier>{f2486558-8e6e-4049-8273-d9975489a25c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="a_star">
       <UniqueIdentifier>{9e2ba77a-ad2d-494b-b0a4-9902967bcb8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{f2486558-8e6e-4049-8273-d9975489a25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_star\library">
+      <UniqueIdentifier>{eaa3393e-9246-4030-82b8-710e09c4d7de}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,19 +25,50 @@
       <Filter>a_star</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="tile.h">
-      <Filter>client</Filter>
-    </ClInclude>
-    <ClInclude Include="client.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="test.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="recode.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="a-star\library\bit_grid.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\vector.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\memory.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\pair.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\swap.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\shared_pointer.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\list.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\pool.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\weak_pointer.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\unordered_map.h">
+      <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\library\hash.h">
+      <Filter>a_star\library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
