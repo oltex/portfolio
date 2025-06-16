@@ -27,7 +27,12 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
+**/[Bb]in/*
+!**/[Bb]in/*.cfg
+!**/[Bb]in/libmysql.lib
+!**/[Bb]in/libmysql.dll
+!**/[Bb]in/libssl-3-x64.dll
+!**/[Bb]in/libcrypto-3-x64.dll
 [Oo]bj/
 [Oo]ut/
 [Ll]og/
