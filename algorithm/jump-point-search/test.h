@@ -227,7 +227,7 @@ public:
 	state _state;
 	float _wall_probability = 0.48f;
 	size_type _repeat = 0;
-	size_type _skip = 1;
+	size_type _skip = 20;
 	size_type _wait = 20;
 
 	long long _sum = 0;
