@@ -1,42 +1,38 @@
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
+#include "application.h"
 
-#include "../../system/window/instance.h"
-#include "../../system/window/cls.h"
-#include "../../system/window/sct.h"
-#include "../../system/window/window.h"
-
-#include "client.h"
-//방향 추가
+application* _application;
 
 auto message(void) noexcept -> MSG;
 LRESULT CALLBACK procedure(HWND const wnd, UINT const message, WPARAM const wparam, LPARAM const lparam) noexcept;
 int APIENTRY wWinMain(_In_ HINSTANCE hinstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow) {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-	window::instance instance(hinstance);
-	window::cursor cursor;
-	cursor.load(nullptr, IDC_ARROW, IMAGE_CURSOR, 0, 0, LR_DEFAULTSIZE | LR_SHARED);
 
-	window::cls cls;
-	cls.set_instance(instance);
-	cls.set_class_name(L"window");
-	cls.set_procedure(procedure);
-	cls.set_style(CS_HREDRAW | CS_VREDRAW);
-	cls.set_cursor(cursor);
-	cls.register_();
+	WNDCLASSEXW _wcex;
+	memset(&_wcex, 0, sizeof(WNDCLASSEX));
+	_wcex.cbSize = sizeof(WNDCLASSEX);
+	_wcex.lpfnWndProc = DefWindowProcW;
+	_wcex.hbrBackground = 0;
+	_wcex.hInstance = hinstance;
+	_wcex.lpszClassName = L"window";
+	_wcex.lpfnWndProc = procedure;
+	_wcex.style = CS_HREDRAW | CS_VREDRAW;
+	_wcex.hCursor = LoadCursorW(NULL, IDC_ARROW);
+	RegisterClassExW(&_wcex);
 
-	window::sct sct;
-	sct.set_instance(instance);
-	sct.set_class_name(L"window");
-	sct.set_style(WS_OVERLAPPEDWINDOW);
-	sct.set_x(CW_USEDEFAULT);
-	sct.set_width(CW_USEDEFAULT);
+	HWND hwnd = CreateWindowExW(
+		0, L"window", nullptr, WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr,
+		nullptr, hinstance, nullptr);
 
-	client::constructor(sct.create());
-	client::instance().initialize();
+	_application = new application(hwnd);
+	_application->initialize();
 
 	MSG msg = message();
+
+	delete _application;
 	return static_cast<int>(msg.wParam);
 }
 
@@ -60,7 +56,7 @@ LRESULT CALLBACK procedure(HWND const hwnd, UINT const message, WPARAM const wpa
 	case WM_MOUSEMOVE:
 	case WM_MOUSEWHEEL:
 	case WM_PAINT:
-		client::instance().procedure(hwnd, message, wparam, lparam);
+		_application->procedure(hwnd, message, wparam, lparam);
 		break;
 	case WM_DESTROY: {
 		PostQuitMessage(0);

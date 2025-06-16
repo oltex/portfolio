@@ -4,22 +4,25 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="client">
-      <UniqueIdentifier>{8a2dba41-b304-401b-ab88-a26fbbd84984}</UniqueIdentifier>
-    </Filter>
     <Filter Include="jump-point-search">
       <UniqueIdentifier>{bf2f55da-d4dc-4c1c-b9bb-a6c6d38f461f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{8a2dba41-b304-401b-ab88-a26fbbd84984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jump-point-search\library">
+      <UniqueIdentifier>{2e5a7e31-0743-4b91-9d4c-64375cf1675e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
-    <ClInclude Include="client.h">
-      <Filter>client</Filter>
+    <ClInclude Include="application.h">
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="tile.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="jump-point-search\grid.h">
       <Filter>jump-point-search</Filter>
@@ -31,10 +34,43 @@
       <Filter>jump-point-search</Filter>
     </ClInclude>
     <ClInclude Include="test.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
     </ClInclude>
     <ClInclude Include="recode.h">
-      <Filter>client</Filter>
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\bit_grid.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\hash.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\list.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\memory.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\pair.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\pool.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\shared_pointer.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\swap.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\unordered_map.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\vector.h">
+      <Filter>jump-point-search\library</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\library\weak_pointer.h">
+      <Filter>jump-point-search\library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

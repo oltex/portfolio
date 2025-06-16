@@ -151,9 +151,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
-    <ClInclude Include="client.h" />
+    <ClInclude Include="application.h" />
     <ClInclude Include="jump-point-search\coordinate.h" />
     <ClInclude Include="jump-point-search\grid.h" />
+    <ClInclude Include="jump-point-search\library\bit_grid.h" />
+    <ClInclude Include="jump-point-search\library\hash.h" />
+    <ClInclude Include="jump-point-search\library\list.h" />
+    <ClInclude Include="jump-point-search\library\memory.h" />
+    <ClInclude Include="jump-point-search\library\pair.h" />
+    <ClInclude Include="jump-point-search\library\pool.h" />
+    <ClInclude Include="jump-point-search\library\shared_pointer.h" />
+    <ClInclude Include="jump-point-search\library\swap.h" />
+    <ClInclude Include="jump-point-search\library\unordered_map.h" />
+    <ClInclude Include="jump-point-search\library\vector.h" />
+    <ClInclude Include="jump-point-search\library\weak_pointer.h" />
     <ClInclude Include="jump-point-search\path.h" />
     <ClInclude Include="recode.h" />
     <ClInclude Include="test.h" />

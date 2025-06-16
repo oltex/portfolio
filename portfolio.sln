@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "algorithm", "algorithm", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a-star", "algorithm\a-star\a-star.vcxproj", "{BA1A03E3-D111-400D-A92D-6DB5676E44DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jump-point-search", "algorithm\jump-point-search\jump-point-search.vcxproj", "{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,14 @@ Global
 		{BA1A03E3-D111-400D-A92D-6DB5676E44DE}.Release|x64.Build.0 = Release|x64
 		{BA1A03E3-D111-400D-A92D-6DB5676E44DE}.Release|x86.ActiveCfg = Release|Win32
 		{BA1A03E3-D111-400D-A92D-6DB5676E44DE}.Release|x86.Build.0 = Release|Win32
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Debug|x64.ActiveCfg = Debug|x64
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Debug|x64.Build.0 = Debug|x64
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Debug|x86.Build.0 = Debug|Win32
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Release|x64.ActiveCfg = Release|x64
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Release|x64.Build.0 = Release|x64
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Release|x86.ActiveCfg = Release|Win32
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +63,7 @@ Global
 		{596AB83F-D3C5-4484-AEE5-0DEF6E8ADBE9} = {4300FD23-EB82-497F-BFBF-55BD99A1229A}
 		{0F739725-F22B-4E8D-BEC8-FE12A801EAD0} = {4300FD23-EB82-497F-BFBF-55BD99A1229A}
 		{BA1A03E3-D111-400D-A92D-6DB5676E44DE} = {B11EC328-EC6B-471A-B044-D5416D43AE33}
+		{4FE0314B-EE4A-46E7-86FB-7C613D53B0E8} = {B11EC328-EC6B-471A-B044-D5416D43AE33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFA7926F-0B86-4F18-85BB-FC95A8149511}
