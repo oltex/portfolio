@@ -24,19 +24,6 @@
     <ClInclude Include="a-star\path.h">
       <Filter>a_star</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
-      <Filter>application</Filter>
-    </ClInclude>
-    <ClInclude Include="tile.h">
-      <Filter>application</Filter>
-    </ClInclude>
-    <ClInclude Include="test.h">
-      <Filter>application</Filter>
-    </ClInclude>
-    <ClInclude Include="recode.h">
-      <Filter>application</Filter>
-    </ClInclude>
-    <ClInclude Include="application.h" />
     <ClInclude Include="a-star\library\bit_grid.h">
       <Filter>a_star\library</Filter>
     </ClInclude>
@@ -69,6 +56,21 @@
     </ClInclude>
     <ClInclude Include="a-star\library\hash.h">
       <Filter>a_star\library</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="recode.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
