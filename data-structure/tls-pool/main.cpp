@@ -35,8 +35,7 @@ inline static unsigned int __stdcall func(void* arg) noexcept {
 				_pool.deallocate(*_array[j]);
 		}
 		QueryPerformanceCounter(&_end);
-		printf("%f\n", (_end.QuadPart - _start.QuadPart) /
-			static_cast<double>(_frequency.QuadPart) * 1e3);
+		printf("%f\n", (_end.QuadPart - _start.QuadPart) / static_cast<double>(_frequency.QuadPart) * 1e3);
 	}
 	free(_array);
 	return 0;
@@ -57,8 +56,7 @@ inline static unsigned int __stdcall func2(void* arg) noexcept {
 				free(_array[j]);
 		}
 		QueryPerformanceCounter(&_end);
-		printf("%f\n", (_end.QuadPart - _start.QuadPart) /
-			static_cast<double>(_frequency.QuadPart) * 1e3);
+		printf("%f\n", (_end.QuadPart - _start.QuadPart) / static_cast<double>(_frequency.QuadPart) * 1e3);
 	}
 	free(_array);
 	return 0;

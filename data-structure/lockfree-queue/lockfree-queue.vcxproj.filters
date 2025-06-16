@@ -4,7 +4,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="queue.h" />
-    <ClInclude Include="normal_queue.h" />
+    <ClInclude Include="lockfree_queue.h" />
   </ItemGroup>
 </Project>
