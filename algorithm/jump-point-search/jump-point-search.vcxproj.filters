@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{8a2dba41-b304-401b-ab88-a26fbbd84984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jump-point-search">
+      <UniqueIdentifier>{bf2f55da-d4dc-4c1c-b9bb-a6c6d38f461f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\grid.h">
+      <Filter>jump-point-search</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\coordinate.h">
+      <Filter>jump-point-search</Filter>
+    </ClInclude>
+    <ClInclude Include="jump-point-search\path.h">
+      <Filter>jump-point-search</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="recode.h">
+      <Filter>client</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{f2486558-8e6e-4049-8273-d9975489a25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_star">
+      <UniqueIdentifier>{9e2ba77a-ad2d-494b-b0a4-9902967bcb8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="a-star\coordinate.h">
+      <Filter>a_star</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\grid.h">
+      <Filter>a_star</Filter>
+    </ClInclude>
+    <ClInclude Include="a-star\path.h">
+      <Filter>a_star</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="recode.h">
+      <Filter>client</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

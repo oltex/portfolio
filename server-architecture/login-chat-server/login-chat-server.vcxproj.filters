@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="library\database\include\openssl\applink.c">
+      <Filter>library\database\include\openssl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="library\design-pattern\thread-local\singleton.h">
+      <Filter>library\design-pattern\thread-local</Filter>
+    </ClInclude>
+    <ClInclude Include="library\design-pattern\singleton.h">
+      <Filter>library\design-pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\file.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\utility\parser.h">
+      <Filter>library\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="library\utility\performance_data_helper.h">
+      <Filter>library\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="library\utility\crash_dump.h">
+      <Filter>library\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="library\utility\command.h">
+      <Filter>library\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="library\utility\logger.h">
+      <Filter>library\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\time\date.h">
+      <Filter>library\system-component\time</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\time\unix.h">
+      <Filter>library\system-component\time</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\thread.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\handle.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\time\multimedia.h">
+      <Filter>library\system-component\time</Filter>
+    </ClInclude>
+    <ClInclude Include="library\algorithm\predicate.h">
+      <Filter>library\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\mysql.h">
+      <Filter>library\database</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\redis.h">
+      <Filter>library\database</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\errmsg.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\field_types.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\my_command.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\my_compress.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\my_list.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql_com.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql_time.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql_version.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysqld_error.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysqlx_ername.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysqlx_error.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysqlx_version.h">
+      <Filter>library\database\include</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql\client_plugin.h">
+      <Filter>library\database\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql\plugin_auth_common.h">
+      <Filter>library\database\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\include\mysql\udf_registration_types.h">
+      <Filter>library\database\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="login_chat_server.h" />
+    <ClInclude Include="library\system-component\overlapped.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\socket.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\socket_address.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\intrusive\list.h">
+      <Filter>library\data-structure\intrusive</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\intrusive\shared_pointer.h">
+      <Filter>library\data-structure\intrusive</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\lockfree\memory_pool.h">
+      <Filter>library\data-structure\lockfree</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\lockfree\queue.h">
+      <Filter>library\data-structure\lockfree</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\thread-local\memory_pool.h">
+      <Filter>library\data-structure\thread-local</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\pair.h">
+      <Filter>library\data-structure</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\priority_queue.h">
+      <Filter>library\data-structure</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\serialize_buffer.h">
+      <Filter>library\data-structure</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\unique_pointer.h">
+      <Filter>library\data-structure</Filter>
+    </ClInclude>
+    <ClInclude Include="library\data-structure\vector.h">
+      <Filter>library\data-structure</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\wait_on_address.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\lock\critical_section.h">
+      <Filter>library\system-component\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\array_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\builder_iface.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\builders_factory.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\bulk_string_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\error_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\integer_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\reply_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\builders\simple_string_builder.hpp">
+      <Filter>library\database\cpp_redis\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\client.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\consumer.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\reply.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\sentinel.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\subscriber.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\core\types.hpp">
+      <Filter>library\database\cpp_redis\core</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\helpers\generate_rand.hpp">
+      <Filter>library\database\cpp_redis\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\helpers\variadic_template.hpp">
+      <Filter>library\database\cpp_redis\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\impl\client.ipp">
+      <Filter>library\database\cpp_redis\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\impl\types.hpp">
+      <Filter>library\database\cpp_redis\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\convert.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\deprecated.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\dispatch_queue.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\error.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\logger.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\macro.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\misc\optional.hpp">
+      <Filter>library\database\cpp_redis\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\network\redis_connection.hpp">
+      <Filter>library\database\cpp_redis\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\network\tcp_client.hpp">
+      <Filter>library\database\cpp_redis\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\cpp_redis\network\tcp_client_iface.hpp">
+      <Filter>library\database\cpp_redis\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\network\io_service.hpp">
+      <Filter>library\database\tacopie\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\network\self_pipe.hpp">
+      <Filter>library\database\tacopie\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\network\tcp_client.hpp">
+      <Filter>library\database\tacopie\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\network\tcp_server.hpp">
+      <Filter>library\database\tacopie\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\network\tcp_socket.hpp">
+      <Filter>library\database\tacopie\network</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\utils\error.hpp">
+      <Filter>library\database\tacopie\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\utils\logger.hpp">
+      <Filter>library\database\tacopie\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\utils\thread_pool.hpp">
+      <Filter>library\database\tacopie\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="library\database\tacopie\utils\typedefs.hpp">
+      <Filter>library\database\tacopie\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="library\system-component\inputoutput_completion_port.h">
+      <Filter>library\system-component</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h" />
+    <ClInclude Include="server.h">
+      <Filter>library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="library">
+      <UniqueIdentifier>{90c14f38-3947-4a7c-86d2-3eeb65821177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\system-component">
+      <UniqueIdentifier>{bf0e1dbf-00e5-4cc9-b669-0482046b407a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\design-pattern">
+      <UniqueIdentifier>{a62cd51f-ab8c-46b9-9a7a-eeff412dbb1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\design-pattern\thread-local">
+      <UniqueIdentifier>{a366f2e2-980b-4b78-884b-3b067fc1d0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\utility">
+      <UniqueIdentifier>{5af8e7e7-d5ae-4ed0-8ca7-52e16751cae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\system-component\time">
+      <UniqueIdentifier>{cf8c7b21-5ce0-4459-8e26-7ac95ff5384a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\algorithm">
+      <UniqueIdentifier>{e130d040-e493-4eed-bf74-09f8b530e426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database">
+      <UniqueIdentifier>{d448e080-80de-4185-b686-c273fe2d740b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\library">
+      <UniqueIdentifier>{31170b4b-ef09-4f7d-99bc-68f975de4eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\include">
+      <UniqueIdentifier>{8315c854-b351-4506-8582-33b54a607c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\include\mysql">
+      <UniqueIdentifier>{912bc230-021b-4610-a405-512ca600e7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\include\openssl">
+      <UniqueIdentifier>{f2592dc6-3242-4a96-a971-5652146afa66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis">
+      <UniqueIdentifier>{323b99d2-4f89-4aa7-bf6b-83ef6416884d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\tacopie">
+      <UniqueIdentifier>{f70ac76c-65e5-4a3e-938a-65a11d19565f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\data-structure">
+      <UniqueIdentifier>{79f51720-c29c-450a-805f-b8545c0609a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\data-structure\thread-local">
+      <UniqueIdentifier>{0401ff85-e7f6-4d35-8705-f3686c0f17c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\data-structure\lockfree">
+      <UniqueIdentifier>{8286a71f-8619-4555-a858-cc4c2a45c104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\data-structure\intrusive">
+      <UniqueIdentifier>{e9ac73de-010a-4402-a086-5dfa08238bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\system-component\lock">
+      <UniqueIdentifier>{24e3b71e-6555-4515-85bc-f28258cfc254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\builders">
+      <UniqueIdentifier>{9cbe2ad5-b9f2-4579-809d-ba65253820f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\core">
+      <UniqueIdentifier>{6e3153c5-cd29-4b5b-8f29-61b2b4c496ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\helpers">
+      <UniqueIdentifier>{d45cabb5-c65d-4a50-aa66-f72b995174a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\impl">
+      <UniqueIdentifier>{32b37dca-e799-44ec-abe9-8291f2260df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\misc">
+      <UniqueIdentifier>{3beef5c2-b7a3-4cd7-89e1-21e686eff586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\cpp_redis\network">
+      <UniqueIdentifier>{6f20493c-e631-4a55-8866-b98feeb7b6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\tacopie\network">
+      <UniqueIdentifier>{27e37b09-31ce-4490-be70-d316e4b55e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\database\tacopie\utils">
+      <UniqueIdentifier>{bc5dea25-b716-4039-8443-5dff7802ecbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="library\database\library\libmysql.lib">
+      <Filter>library\database\library</Filter>
+    </Library>
+    <Library Include="library\database\cpp_redis\cpp_redis.lib">
+      <Filter>library\database\cpp_redis</Filter>
+    </Library>
+    <Library Include="library\database\tacopie\tacopie.lib">
+      <Filter>library\database\tacopie</Filter>
+    </Library>
+    <Library Include="library\database\library\mysqlclient.lib">
+      <Filter>library\database\library</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="library\database\cpp_redis\cpp_redis">
+      <Filter>library\database\cpp_redis</Filter>
+    </None>
+    <None Include="library\database\cpp_redis\cpp_redis.pdb">
+      <Filter>library\database\cpp_redis</Filter>
+    </None>
+    <None Include="library\database\tacopie\tacopie">
+      <Filter>library\database\tacopie</Filter>
+    </None>
+    <None Include="library\database\tacopie\tacopie.pdb">
+      <Filter>library\database\tacopie</Filter>
+    </None>
+    <None Include="library\database\library\libcrypto-3-x64.dll">
+      <Filter>library\database\library</Filter>
+    </None>
+    <None Include="library\database\library\libmysql.dll">
+      <Filter>library\database\library</Filter>
+    </None>
+    <None Include="library\database\library\libssl-3-x64.dll">
+      <Filter>library\database\library</Filter>
+    </None>
+  </ItemGroup>
+</Project>
