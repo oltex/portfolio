@@ -1,1 +1,0 @@
-![](image/a-star.png)
